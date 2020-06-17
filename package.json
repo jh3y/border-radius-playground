@@ -5,9 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "generate:sw": " workbox generateSW workbox-config.js",
-    "build": "parcel build src/markup/index.pug",
+    "build": "parcel build src/index.pug",
     "postbuild": "npm run generate:sw",
-    "dev": "parcel src/markup/index.pug"
+    "dev": "parcel src/index.pug"
   },
   "author": "",
   "license": "MIT",
