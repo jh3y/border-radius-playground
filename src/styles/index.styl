@@ -1,0 +1,22 @@
+*
+  box-sizing border-box
+
+body
+  min-height 100vh
+  display flex
+  align-items center
+  justify-content center
+  flex-direction column
+
+.box
+  height calc(var(--height, 50) * 1vmin)
+  width calc(var(--width, 50) * 1vmin)
+  background #a0f
+  border 10px solid #000
+  border-radius 'calc(%s * 1%) calc(%s * 1%) calc(%s * 1%) calc(%s * 1%) / calc(%s * 1%) calc(%s * 1%) calc(%s * 1%) calc(%s * 1%)' % (var(--htl) var(--htr) var(--hbr) var(--hbl) var(--vtl) var(--vtr) var(--vbr) var(--vbl))
+
+.output
+  font-family sans-serif
+  margin-top 1rem
+  font-weight bold
+
